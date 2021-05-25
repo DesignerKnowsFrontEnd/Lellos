@@ -1,0 +1,124 @@
+[22-Feb-2021 16:52:23 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in C:\Users\user\Local Sites\lellos\app\public\wp-includes\wp-db.php on line 2056
+[22-Feb-2021 16:52:23 UTC] PHP Stack trace:
+[22-Feb-2021 16:52:23 UTC] PHP   1. {main}() C:\Users\user\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[22-Feb-2021 16:52:23 UTC] PHP   2. include() C:\Users\user\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[22-Feb-2021 16:52:23 UTC] PHP   3. include() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[22-Feb-2021 16:52:23 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[22-Feb-2021 16:52:23 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[22-Feb-2021 16:52:23 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[22-Feb-2021 16:52:23 UTC] PHP   7. WP_CLI\Runner->run_command_and_exit() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1160
+[22-Feb-2021 16:52:23 UTC] PHP   8. WP_CLI\Runner->run_command() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:394
+[22-Feb-2021 16:52:23 UTC] PHP   9. WP_CLI\Dispatcher\Subcommand->invoke() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:371
+[22-Feb-2021 16:52:23 UTC] PHP  10. call_user_func:{phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php:451}() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php:451
+[22-Feb-2021 16:52:23 UTC] PHP  11. WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure:phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:95-102}() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php:451
+[22-Feb-2021 16:52:23 UTC] PHP  12. call_user_func:{phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:98}() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:98
+[22-Feb-2021 16:52:23 UTC] PHP  13. Core_Command->check_update() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:98
+[22-Feb-2021 16:52:23 UTC] PHP  14. Core_Command->get_updates() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/core-command/src/Core_Command.php:77
+[22-Feb-2021 16:52:23 UTC] PHP  15. wp_version_check() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/core-command/src/Core_Command.php:1297
+[22-Feb-2021 16:52:23 UTC] PHP  16. get_site_transient() C:\Users\user\Local Sites\lellos\app\public\wp-includes\update.php:37
+[22-Feb-2021 16:52:23 UTC] PHP  17. get_site_option() C:\Users\user\Local Sites\lellos\app\public\wp-includes\option.php:1884
+[22-Feb-2021 16:52:23 UTC] PHP  18. get_network_option() C:\Users\user\Local Sites\lellos\app\public\wp-includes\option.php:1246
+[22-Feb-2021 16:52:23 UTC] PHP  19. get_option() C:\Users\user\Local Sites\lellos\app\public\wp-includes\option.php:1381
+[22-Feb-2021 16:52:23 UTC] PHP  20. wpdb->get_row() C:\Users\user\Local Sites\lellos\app\public\wp-includes\option.php:125
+[22-Feb-2021 16:52:23 UTC] PHP  21. wpdb->query() C:\Users\user\Local Sites\lellos\app\public\wp-includes\wp-db.php:2616
+[22-Feb-2021 16:52:23 UTC] PHP  22. wpdb->_do_query() C:\Users\user\Local Sites\lellos\app\public\wp-includes\wp-db.php:1945
+[22-Feb-2021 16:52:23 UTC] PHP  23. mysqli_query() C:\Users\user\Local Sites\lellos\app\public\wp-includes\wp-db.php:2056
+[22-Feb-2021 16:52:23 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in C:\Users\user\Local Sites\lellos\app\public\wp-includes\wp-db.php on line 2056
+[22-Feb-2021 16:52:23 UTC] PHP Stack trace:
+[22-Feb-2021 16:52:23 UTC] PHP   1. {main}() C:\Users\user\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[22-Feb-2021 16:52:23 UTC] PHP   2. include() C:\Users\user\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[22-Feb-2021 16:52:24 UTC] PHP   3. include() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[22-Feb-2021 16:52:24 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[22-Feb-2021 16:52:24 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[22-Feb-2021 16:52:24 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[22-Feb-2021 16:52:24 UTC] PHP   7. WP_CLI\Runner->run_command_and_exit() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1160
+[22-Feb-2021 16:52:24 UTC] PHP   8. WP_CLI\Runner->run_command() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:394
+[22-Feb-2021 16:52:24 UTC] PHP   9. WP_CLI\Dispatcher\Subcommand->invoke() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:371
+[22-Feb-2021 16:52:24 UTC] PHP  10. call_user_func:{phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php:451}() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php:451
+[22-Feb-2021 16:52:24 UTC] PHP  11. WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure:phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:95-102}() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php:451
+[22-Feb-2021 16:52:24 UTC] PHP  12. call_user_func:{phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:98}() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:98
+[22-Feb-2021 16:52:24 UTC] PHP  13. Core_Command->check_update() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php:98
+[22-Feb-2021 16:52:24 UTC] PHP  14. Core_Command->get_updates() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/core-command/src/Core_Command.php:77
+[22-Feb-2021 16:52:24 UTC] PHP  15. wp_version_check() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/core-command/src/Core_Command.php:1297
+[22-Feb-2021 16:52:24 UTC] PHP  16. get_site_transient() C:\Users\user\Local Sites\lellos\app\public\wp-includes\update.php:37
+[22-Feb-2021 16:52:24 UTC] PHP  17. get_site_option() C:\Users\user\Local Sites\lellos\app\public\wp-includes\option.php:1884
+[22-Feb-2021 16:52:24 UTC] PHP  18. get_network_option() C:\Users\user\Local Sites\lellos\app\public\wp-includes\option.php:1246
+[22-Feb-2021 16:52:24 UTC] PHP  19. get_option() C:\Users\user\Local Sites\lellos\app\public\wp-includes\option.php:1381
+[22-Feb-2021 16:52:24 UTC] PHP  20. wpdb->get_row() C:\Users\user\Local Sites\lellos\app\public\wp-includes\option.php:125
+[22-Feb-2021 16:52:24 UTC] PHP  21. wpdb->query() C:\Users\user\Local Sites\lellos\app\public\wp-includes\wp-db.php:2616
+[22-Feb-2021 16:52:24 UTC] PHP  22. wpdb->_do_query() C:\Users\user\Local Sites\lellos\app\public\wp-includes\wp-db.php:1945
+[22-Feb-2021 16:52:24 UTC] PHP  23. mysqli_query() C:\Users\user\Local Sites\lellos\app\public\wp-includes\wp-db.php:2056
+[09-May-2021 15:47:43 UTC] PHP Warning:  Error while sending QUERY packet. PID=12316 in C:\Users\user\Local Sites\lellos\app\public\wp-includes\wp-db.php on line 2056
+[09-May-2021 15:47:43 UTC] PHP Warning:  Error while sending QUERY packet. PID=6692 in C:\Users\user\Local Sites\lellos\app\public\wp-includes\wp-db.php on line 2056
+[09-May-2021 15:47:43 UTC] PHP Stack trace:
+[09-May-2021 15:47:43 UTC] PHP Stack trace:
+[09-May-2021 15:47:43 UTC] PHP   1. {main}() C:\Users\user\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[09-May-2021 15:47:43 UTC] PHP   1. {main}() C:\Users\user\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:0
+[09-May-2021 15:47:43 UTC] PHP   2. include() C:\Users\user\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[09-May-2021 15:47:43 UTC] PHP   2. include() C:\Users\user\AppData\Local\Programs\Local\resources\extraResources\bin\wp-cli\wp-cli.phar:4
+[09-May-2021 15:47:43 UTC] PHP   3. include() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[09-May-2021 15:47:43 UTC] PHP   3. include() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php:11
+[09-May-2021 15:47:43 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[09-May-2021 15:47:43 UTC] PHP   4. WP_CLI\bootstrap() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php:27
+[09-May-2021 15:47:43 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[09-May-2021 15:47:43 UTC] PHP   5. WP_CLI\Bootstrap\LaunchRunner->process() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php:74
+[09-May-2021 15:47:43 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[09-May-2021 15:47:43 UTC] PHP   6. WP_CLI\Runner->start() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php:23
+[09-May-2021 15:47:43 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1158
+[09-May-2021 15:47:43 UTC] PHP   7. WP_CLI\Runner->load_wordpress() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1158
+[09-May-2021 15:47:43 UTC] PHP   8. require() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1237
+[09-May-2021 15:47:43 UTC] PHP   8. require() phar://C:/Users/user/AppData/Local/Programs/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php:1237
+[09-May-2021 15:47:43 UTC] PHP   9. do_action() C:\Users\user\Local Sites\lellos\app\public\wp-settings.php:557
+[09-May-2021 15:47:43 UTC] PHP   9. do_action() C:\Users\user\Local Sites\lellos\app\public\wp-settings.php:557
+[09-May-2021 15:47:43 UTC] PHP  10. WP_Hook->do_action() C:\Users\user\Local Sites\lellos\app\public\wp-includes\plugin.php:484
+[09-May-2021 15:47:43 UTC] PHP  10. WP_Hook->do_action() C:\Users\user\Local Sites\lellos\app\public\wp-includes\plugin.php:484
+[09-May-2021 15:47:43 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class-wp-hook.php:311
+[09-May-2021 15:47:43 UTC] PHP  11. WP_Hook->apply_filters() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class-wp-hook.php:311
+[09-May-2021 15:47:43 UTC] PHP  12. wp_widgets_init() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class-wp-hook.php:287
+[09-May-2021 15:47:43 UTC] PHP  12. wp_widgets_init() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class-wp-hook.php:287
+[09-May-2021 15:47:43 UTC] PHP  13. do_action() C:\Users\user\Local Sites\lellos\app\public\wp-includes\widgets.php:1795
+[09-May-2021 15:47:43 UTC] PHP  13. do_action() C:\Users\user\Local Sites\lellos\app\public\wp-includes\widgets.php:1795
+[09-May-2021 15:47:43 UTC] PHP  14. WP_Hook->do_action() C:\Users\user\Local Sites\lellos\app\public\wp-includes\plugin.php:484
+[09-May-2021 15:47:43 UTC] PHP  14. WP_Hook->do_action() C:\Users\user\Local Sites\lellos\app\public\wp-includes\plugin.php:484
+[09-May-2021 15:47:43 UTC] PHP  15. WP_Hook->apply_filters() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class-wp-hook.php:311
+[09-May-2021 15:47:43 UTC] PHP  15. WP_Hook->apply_filters() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class-wp-hook.php:311
+[09-May-2021 15:47:43 UTC] PHP  16. WP_Widget_Factory->_register_widgets() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class-wp-hook.php:287
+[09-May-2021 15:47:43 UTC] PHP  16. WP_Widget_Factory->_register_widgets() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class-wp-hook.php:287
+[09-May-2021 15:47:43 UTC] PHP  17. WP_Widget_Text->_register() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class-wp-widget-factory.php:102
+[09-May-2021 15:47:43 UTC] PHP  17. WP_Widget_Text->_register() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class-wp-widget-factory.php:102
+[09-May-2021 15:47:43 UTC] PHP  18. WP_Widget_Text->_register_one() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class-wp-widget.php:252
+[09-May-2021 15:47:43 UTC] PHP  18. WP_Widget_Text->_register_one() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class-wp-widget.php:252
+[09-May-2021 15:47:43 UTC] PHP  19. wp_add_inline_script() C:\Users\user\Local Sites\lellos\app\public\wp-includes\widgets\class-wp-widget-text.php:58
+[09-May-2021 15:47:43 UTC] PHP  19. wp_add_inline_script() C:\Users\user\Local Sites\lellos\app\public\wp-includes\widgets\class-wp-widget-text.php:58
+[09-May-2021 15:47:43 UTC] PHP  20. wp_scripts() C:\Users\user\Local Sites\lellos\app\public\wp-includes\functions.wp-scripts.php:147
+[09-May-2021 15:47:43 UTC] PHP  20. wp_scripts() C:\Users\user\Local Sites\lellos\app\public\wp-includes\functions.wp-scripts.php:147
+[09-May-2021 15:47:43 UTC] PHP  21. WP_Scripts->__construct() C:\Users\user\Local Sites\lellos\app\public\wp-includes\functions.wp-scripts.php:24
+[09-May-2021 15:47:43 UTC] PHP  21. WP_Scripts->__construct() C:\Users\user\Local Sites\lellos\app\public\wp-includes\functions.wp-scripts.php:24
+[09-May-2021 15:47:43 UTC] PHP  22. WP_Scripts->init() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class.wp-scripts.php:142
+[09-May-2021 15:47:43 UTC] PHP  22. WP_Scripts->init() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class.wp-scripts.php:142
+[09-May-2021 15:47:43 UTC] PHP  23. do_action_ref_array() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class.wp-scripts.php:167
+[09-May-2021 15:47:43 UTC] PHP  23. do_action_ref_array() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class.wp-scripts.php:167
+[09-May-2021 15:47:43 UTC] PHP  24. WP_Hook->do_action() C:\Users\user\Local Sites\lellos\app\public\wp-includes\plugin.php:551
+[09-May-2021 15:47:43 UTC] PHP  24. WP_Hook->do_action() C:\Users\user\Local Sites\lellos\app\public\wp-includes\plugin.php:551
+[09-May-2021 15:47:43 UTC] PHP  25. WP_Hook->apply_filters() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class-wp-hook.php:311
+[09-May-2021 15:47:43 UTC] PHP  25. WP_Hook->apply_filters() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class-wp-hook.php:311
+[09-May-2021 15:47:43 UTC] PHP  26. wp_default_packages() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class-wp-hook.php:287
+[09-May-2021 15:47:43 UTC] PHP  26. wp_default_packages() C:\Users\user\Local Sites\lellos\app\public\wp-includes\class-wp-hook.php:287
+[09-May-2021 15:47:43 UTC] PHP  27. wp_register_tinymce_scripts() C:\Users\user\Local Sites\lellos\app\public\wp-includes\script-loader.php:537
+[09-May-2021 15:47:43 UTC] PHP  27. wp_register_tinymce_scripts() C:\Users\user\Local Sites\lellos\app\public\wp-includes\script-loader.php:537
+[09-May-2021 15:47:43 UTC] PHP  28. script_concat_settings() C:\Users\user\Local Sites\lellos\app\public\wp-includes\script-loader.php:50
+[09-May-2021 15:47:43 UTC] PHP  28. script_concat_settings() C:\Users\user\Local Sites\lellos\app\public\wp-includes\script-loader.php:50
+[09-May-2021 15:47:43 UTC] PHP  29. get_site_option() C:\Users\user\Local Sites\lellos\app\public\wp-includes\script-loader.php:2146
+[09-May-2021 15:47:43 UTC] PHP  29. get_site_option() C:\Users\user\Local Sites\lellos\app\public\wp-includes\script-loader.php:2146
+[09-May-2021 15:47:43 UTC] PHP  30. get_network_option() C:\Users\user\Local Sites\lellos\app\public\wp-includes\option.php:1246
+[09-May-2021 15:47:43 UTC] PHP  30. get_network_option() C:\Users\user\Local Sites\lellos\app\public\wp-includes\option.php:1246
+[09-May-2021 15:47:43 UTC] PHP  31. get_option() C:\Users\user\Local Sites\lellos\app\public\wp-includes\option.php:1381
+[09-May-2021 15:47:43 UTC] PHP  31. get_option() C:\Users\user\Local Sites\lellos\app\public\wp-includes\option.php:1381
+[09-May-2021 15:47:43 UTC] PHP  32. wpdb->get_row() C:\Users\user\Local Sites\lellos\app\public\wp-includes\option.php:125
+[09-May-2021 15:47:43 UTC] PHP  32. wpdb->get_row() C:\Users\user\Local Sites\lellos\app\public\wp-includes\option.php:125
+[09-May-2021 15:47:43 UTC] PHP  33. wpdb->query() C:\Users\user\Local Sites\lellos\app\public\wp-includes\wp-db.php:2616
+[09-May-2021 15:47:43 UTC] PHP  33. wpdb->query() C:\Users\user\Local Sites\lellos\app\public\wp-includes\wp-db.php:2616
+[09-May-2021 15:47:43 UTC] PHP  34. wpdb->_do_query() C:\Users\user\Local Sites\lellos\app\public\wp-includes\wp-db.php:1945
+[09-May-2021 15:47:43 UTC] PHP  34. wpdb->_do_query() C:\Users\user\Local Sites\lellos\app\public\wp-includes\wp-db.php:1945
+[09-May-2021 15:47:43 UTC] PHP  35. mysqli_query() C:\Users\user\Local Sites\lellos\app\public\wp-includes\wp-db.php:2056
+[09-May-2021 15:47:43 UTC] PHP  35. mysqli_query() C:\Users\user\Local Sites\lellos\app\public\wp-includes\wp-db.php:2056

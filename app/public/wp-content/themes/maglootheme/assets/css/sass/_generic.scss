@@ -1,0 +1,368 @@
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+body{
+  font-family: $main-font;
+  font-size: 15px;
+  line-height: 20px;
+  color: #666666;
+}
+
+a{
+  color:#4b6598;
+}
+
+p{
+  font-family: $main-font;
+  font-size: 15px;
+  line-height: 18px;
+  color: #666666;
+  padding-bottom:10px;
+}
+
+form{
+  p{
+    color: #999999;
+  }
+}
+
+#page{
+  float: none;
+  margin: 0 auto;
+  width: 100%;
+  .block-hero{
+    background-size: cover !important;
+    min-height: 800px;
+    margin-bottom: 20px;
+  }
+}
+
+.animate{
+  visibility:hidden;
+}
+
+.animated {
+  -webkit-animation-duration: 0.15s;
+  -moz-animation-duration: 0.15s;
+  -o-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@for $d from 0 through 10 {
+  $delay:$d*0.15;
+  .animated.delay-#{$d} {
+    @include animation-delay($delay);
+  }
+}
+
+.overtitle{
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  color: #999;
+  margin-bottom: 10px;
+  float: left;
+  width: 100%;
+}
+
+.standard-accordions{
+  .text-center{
+    p{
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+}
+
+.accordion{
+  background: none;
+  border: none;
+  padding:0;
+  margin: 0;
+  .card{
+    background: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    padding: 25px 0;
+    margin: 0;
+    &:first-child{
+      border: none;
+    }
+    .card-header{
+      background: none;
+      border: none;
+      padding:0;
+      margin: 0;
+      .btn-link{
+        padding:0 20px 0px 0px;
+        margin: 0;
+        color: #222222;
+        font-size: 20px;
+        &:hover, &:active, &:focus{
+          text-decoration: none;
+          color:#666666;
+        }
+        &:after{
+          font-family: "Font Awesome 5 Pro";
+          content:'\f056';
+          position: absolute;
+          right: 0;
+          top: 26px;
+        }
+
+        &.collapsed{
+          &:after{
+            font-family: "Font Awesome 5 Pro";
+            content:'\f055';
+            position: absolute;
+            right: 0;
+            top: 26px;
+          }
+        }
+      }
+    }
+    .collapse, .collapsing{
+      padding:0;
+      margin: 0;
+      &.show{
+        padding:0;
+        margin: 0;
+      }
+      .card-body{
+        padding:25px 0px 0px 0px;
+        margin: 0;
+        a{
+          font-family: $main-font;
+          font-size: 20px;
+        }
+        p{
+          font-family: $main-font;
+          font-size: 15px;
+          line-height: 18px;
+          color: #666666;
+          padding-bottom:10px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.contactMap{
+  height: 630px;
+}
+
+.slick-slide img{
+  margin: 0 auto;
+}
+
+.circle{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background:#ffffff;
+  border:1px solid $secondary-color;
+  display: inline-block;
+  color: $secondary-color;
+  font-size: 1.1em;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+
+  &.right{
+    right: 50px;
+    padding: 10px 11.5px;
+  }
+  &.left{
+    left: 50px;
+    padding: 10px 12.5px;
+  }
+
+  &:hover{
+    cursor: pointer;
+    background: $secondary-color;
+    color: #fff;
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding: 0 15px;
+  list-style: none;
+  text-align: center;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  display: none;
+}
+.slick-dots li:before {
+  top: 1px;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: $tertiary-color;
+  position: absolute;
+  padding-right: 0;
+}
+
+.slick-dots li.slick-active {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0px 0px -6px 5px;
+  padding: 8px;
+  cursor: pointer;
+  border: 2px solid #cdcdcd;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active:before {
+  top: 0px;
+  width: 10px;
+  height: 10px;
+  margin-left: -8px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  padding: 5px;
+  background-color: $secondary-color;
+}
+
+span.ajax-loader{
+  display: none !important;
+}
+
+@for $i from 1 through 20 {
+  $pixels:$i*5;
+
+  .margin-top-#{$pixels}{
+    @include margin-top($pixels+px);
+  }
+
+  .margin-bottom-#{$pixels}{
+  @include margin-bottom($pixels+px);
+  }
+
+  .padding-left-#{$pixels}{
+    @include padding-left($pixels+px);
+  }
+
+  .padding-right-#{$pixels}{
+    @include padding-right($pixels+px);
+  }
+
+}
+
+.articleContainer {
+  border: 1px solid #ccc;
+  padding-bottom: 25px;
+  height: 100%;
+}
+
+.block-text{
+  background-size: cover !important;
+  background-position: center !important;
+  min-height: 300px;
+}
+
+.cookie-policy{
+  display: none;
+  margin: auto;
+  position: fixed;
+  bottom: 50px;
+  right: 100px;
+  padding:20px;
+  background: #ffffff;
+  border-radius: 4px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.35);
+  width:270px;
+  color: $primary-color;
+  font-size: 14px;
+  z-index: 1000;
+}
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  z-index: 12;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  border: 2px solid #fff;
+  &:hover{
+    text-decoration:none;
+    background-color:$primary-color;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -o-border-radius: 0px;
+  }
+}
+
+.back-to-top i {
+  display: block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -o-border-radius: 0px;
+  text-align: center;
+  background-color:$secondary-color;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+
+  &:hover{
+    background-color:#cfcfcf;
+    color: $secondary-color;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -o-border-radius: 0px;
+  }
+
+}
+
+@media (max-width:575px) {
+  .back-to-top {
+    bottom: 60px;
+  }
+
+  .circle.left {
+    left: 10px;
+  }
+
+  .circle.right{
+    right: 10px;
+  }
+}

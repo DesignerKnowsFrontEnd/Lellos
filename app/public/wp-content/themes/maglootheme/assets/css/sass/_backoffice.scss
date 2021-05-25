@@ -1,0 +1,73 @@
+#su-generator-tools{
+  opacity: 0 !important;
+}
+
+.acf-image-uploader img {
+  max-height: 100px;
+  width: auto;
+}
+.acf-block-component .acf-block-fields div.acf-field {
+  padding: 5px 20px;
+}
+.acf-field .acf-label {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.text-left{
+  text-align: left !important;
+}
+
+.text-right{
+  text-align: right !important;
+}
+
+.text-center{
+  text-align: center !important;
+}
+
+.wp-block{
+  max-width: 80%!important;
+}
+/** Block Modal Select SVG styling*/
+.editor-block-types-list__list-item .editor-block-types-list__item-icon{
+  padding: 5px 5px;
+}
+.editor-block-types-list__list-item .editor-block-types-list__item-icon .editor-block-icon{
+  width: 100%;
+  height: 100%;
+}
+.editor-block-types-list__list-item .editor-block-types-list__item-icon .editor-block-icon svg{
+  min-width: 70px;
+  min-height: 45px;
+  max-width: 100%;
+  height: 25px;
+  max-height: 100%;
+  margin: 0 auto;
+  display: block;
+  padding:10px;
+}
+/** Block Inspector Select SVG styling*/
+.editor-block-inspector__card{
+  display: block;
+}
+.editor-block-inspector__card .editor-block-icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #eee;
+  border-radius: 0;
+  margin-bottom: 15px;
+}
+.editor-block-inspector__card .editor-block-icon svg{
+  height: 80px;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.animate{
+  visibility:initial !important;
+}

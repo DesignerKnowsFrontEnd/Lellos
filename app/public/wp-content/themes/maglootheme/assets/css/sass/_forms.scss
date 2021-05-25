@@ -1,0 +1,31 @@
+/* Contact form */
+.mandatory-fields{
+  font-size: 13px;
+}
+
+.generic-input{
+  width: 100%;
+  padding: 10px 0px;
+  outline: 0;
+  border: 0;
+  resize: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.input-label{
+  font-family: $main-font;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  top: 0px;
+  color: #999999;
+  padding: 10px 0px;
+  pointer-events: none;
+  transition: 0.2s ease-in-out;
+  left: 15px;
+}
+
+.labelActive{
+  font-size: 13px;
+  top: -18px;
+}

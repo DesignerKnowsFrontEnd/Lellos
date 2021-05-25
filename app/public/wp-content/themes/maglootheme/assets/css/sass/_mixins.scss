@@ -1,0 +1,89 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin margin-top($margin) {
+  margin-top:$margin;
+}
+
+@mixin margin-bottom($margin) {
+  margin-bottom:$margin;
+}
+
+@mixin margin-left($margin) {
+  margin-left:$margin;
+}
+
+@mixin margin-right($margin) {
+  margin-right:$margin;
+}
+
+@mixin padding-top($padding) {
+  padding-top:$padding;
+}
+
+@mixin padding-bottom($padding) {
+  padding-bottom:$padding;
+}
+
+@mixin padding-left($padding) {
+  padding-left:$padding;
+}
+
+@mixin padding-right($padding) {
+  padding-right:$padding;
+}
+
+@mixin button-bg($background, $text-color, $border-color, $background-hover, $text-color-hover, $border-hover, $background-active, $text-color-active, $disabled-background)
+{
+  background: $background;
+  color:$text-color;
+  border:1px solid $border-color;
+  outline: none;
+  &:hover {
+    background:$background-hover;
+    color:$text-color-hover;
+    border:1px solid $border-hover;
+    transition: all 0.3s ease;
+    outline: none;
+    text-decoration: none;
+  }
+  &:active {
+    background:$background-active;
+    color:$text-color-active;
+    border:1px solid $border-hover;
+    outline: none;
+  }
+  &:focus{
+    outline: none;
+    box-shadow: none;
+  }
+  &:focus-within{
+    outline: none;
+    box-shadow: none;
+  }
+  &:focus-visible{
+    outline: none;
+    box-shadow: none;
+  }
+  &:disabled{
+    cursor: not-allowed;
+    background: $disabled-background;
+    border:1px solid $disabled-background;
+  }
+  &[disabled]{
+    cursor: not-allowed;
+    background: $disabled-background;
+    border:1px solid $disabled-background;
+  }
+}
+
+@mixin animation-delay($delay) {
+  animation-delay:$delay+s;
+  -webkit-animation-delay: $delay+s;
+  -moz-animation-delay: $delay+s;
+  -o-animation-delay: $delay+s;
+}

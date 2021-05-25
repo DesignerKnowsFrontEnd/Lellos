@@ -1,0 +1,11 @@
+#header{
+  float: none;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 2px solid $primary-color;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}

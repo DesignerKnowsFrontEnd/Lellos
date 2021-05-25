@@ -1,0 +1,83 @@
+.circle{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background:#ffffff;
+  border:1px solid $secondary-color;
+  display: inline-block;
+  color: $secondary-color;
+  font-size: 1.1em;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+
+  &.right{
+    right: 50px;
+    padding: 10px 11.5px;
+  }
+  &.left{
+    left: 50px;
+    padding: 10px 12.5px;
+  }
+
+  &:hover{
+    cursor: pointer;
+    background: $secondary-color;
+    color: #fff;
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding: 0 15px;
+  list-style: none;
+  text-align: center;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  display: none;
+}
+.slick-dots li:before {
+  top: 1px;
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: $tertiary-color;
+  position: absolute;
+  padding-right: 0;
+}
+
+.slick-dots li.slick-active {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0px 0px -6px 5px;
+  padding: 8px;
+  cursor: pointer;
+  border: 2px solid #cdcdcd;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active:before {
+  top: 0px;
+  width: 10px;
+  height: 10px;
+  margin-left: -8px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  padding: 5px;
+  background-color: $secondary-color;
+}

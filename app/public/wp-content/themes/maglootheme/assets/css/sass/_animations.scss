@@ -1,0 +1,21 @@
+.animate{
+  visibility:hidden;
+}
+
+.animated {
+  -webkit-animation-duration: 0.15s;
+  -moz-animation-duration: 0.15s;
+  -o-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@for $d from 0 through 10 {
+  $delay:$d*0.15;
+  .animated.delay-#{$d} {
+    @include animation-delay($delay);
+  }
+}

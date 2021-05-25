@@ -1,0 +1,19 @@
+.breadcrumbs {
+  height: 200px;
+  border-bottom: 10px solid $primary;
+  width: 100%;
+  margin-top: 40px;
+
+  &-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 200px;
+  }
+}
+
+@include atLarge {
+  .breadcrumbs {
+    margin-top: 100px;
+  }
+}
